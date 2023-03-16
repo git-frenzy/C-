@@ -1,0 +1,11 @@
+# ninja log v5
+0	629	1678918719520187419	CMakeFiles/CC_validator.dir/main.cpp.o	bb473d7aa9ba0a49
+630	702	1678918719595599181	CC_validator	e272c74cbb255c6b
+3	387	1678918741872742020	CMakeFiles/CC_validator.dir/main.cpp.o	bb473d7aa9ba0a49
+387	441	1678918741928537027	CC_validator	e272c74cbb255c6b
+2	571	1678918799367087860	CMakeFiles/CC_validator.dir/main.cpp.o	bb473d7aa9ba0a49
+571	637	1678918799436556610	CC_validator	e272c74cbb255c6b
+2	614	1678919177177324245	CMakeFiles/CC_validator.dir/main.cpp.o	bb473d7aa9ba0a49
+614	681	1678919177246888123	CC_validator	e272c74cbb255c6b
+6	594	1678920205245536204	CMakeFiles/CC_validator.dir/main.cpp.o	bb473d7aa9ba0a49
+594	663	1678920205317031390	CC_validator	e272c74cbb255c6b
