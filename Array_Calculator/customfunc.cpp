@@ -1,5 +1,6 @@
 #include "customfunc.h"
 #include <iostream>
+#include <cstdlib>
 
 
 int bubbleSort(int *arr, int n) {
@@ -13,6 +14,25 @@ int bubbleSort(int *arr, int n) {
             }
         }
     }
+}
+
+
+int realloc(int *ptr, int n) {
+
+    int size = n * sizeof(int);
+    std::cout << "current size of array: " << size << std::endl;
+
+
+    int *ptr2=NULL;
+     ptr2 = (int*) realloc(ptr, 10*sizeof(int));
+
+    if(new_ptr==NULL)
+    {
+        cout << "Memory Re-allocation Failed";
+        exit(1);
+    }
+
+
 }
 
 void output(int *arr, int n) {
@@ -62,7 +82,7 @@ int operation(int *arr, int n) {
             }
             return ans;
 
-            // division
+            // mod
         } else if (op == '%') {
             int ans = arr[0];
             for (int i = 1; i < n; i++) {

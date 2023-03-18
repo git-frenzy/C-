@@ -26,6 +26,7 @@ int main() {
     drawBoard(spaces);
 
     while (running) {
+
         playerMove(spaces, player);
         drawBoard(spaces);
 
@@ -41,6 +42,7 @@ int main() {
             running = false;
             break;
         }
+
     }
 
 
@@ -86,7 +88,7 @@ void computerMove(char *spaces, char computer) {
 
 
     while (true) {
-        co == rand() % 9;
+        co = rand() % 9;
         if (spaces[co] == ' ') {
             spaces[co] = computer;
             break;

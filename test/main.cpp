@@ -1,19 +1,18 @@
 #include <iostream>
+#include <ctime>
 
 class testClass {       // Object
 public:     // Public Access Modifier
     std::string name = "XYZ";       // Attribute 1    // here "XYZ" is globally defined attribute (defining global values is optional)
     std::string occupation = "NONE";  // Attribute 2    // here "NONE" is globally defined attribute (defining global values is optional)
 
-
-    void static method1() {     // Methods (works as functions)
+    static void method1() {     // Methods (works as functions)
         std::cout << "this is the first method" << std::endl;
 
         int age = 10;
-        int *ptr;
-        ptr = &age;
+        int *ptr1 = &age;
 
-        std::cout << *ptr << std::endl;
+        std::cout << *ptr1 << std::endl;
     }
 
     void method2() {
@@ -32,5 +31,14 @@ int main() {
     testObject.method2();       // invoking defined methods (way 2: [ objectName. ])
 
 
-// test
+    srand(time(0));
+    int r_time = rand() % 100;
+
+    int *ptr2 = new int;
+    *ptr2 = r_time;
+    std::cout << *ptr2 << std::endl;
+    delete ptr2;
+
+    int age = 10;
+    int *ptr = &age;
 }
