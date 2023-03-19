@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -16,41 +16,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0602872a-d0b5-4e02-a5e4-a811a890982e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Array_Calculator/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../CC_validator/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/.idea/untitled.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/Array_Calculator" beforeDir="false" afterPath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/Array_Calculator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/CMakeFiles/Array_Calculator.dir/customfunc.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/CMakeFiles/Array_Calculator.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/CMakeFiles/Array_Calculator.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../Array_Calculator/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Array_Calculator/customfunc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Array_Calculator/customfunc.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CC_validator/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../CC_validator/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CC_validator/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../CC_validator/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CC_validator/cmake-build-debug/CC_validator" beforeDir="false" afterPath="$PROJECT_DIR$/../CC_validator/cmake-build-debug/CC_validator" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CC_validator/cmake-build-debug/CMakeFiles/CC_validator.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../CC_validator/cmake-build-debug/CMakeFiles/CC_validator.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CC_validator/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../CC_validator/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../CC_validator/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../CC_validator/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OOPS/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../OOPS/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeFiles/TicTacToe.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/CMakeFiles/TicTacToe.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/TicTacToe" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/cmake-build-debug/TicTacToe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TicTacToe/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../TicTacToe/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cmake-build-debug/.cmake/api/v1/reply/index-2023-03-16T20-54-47-0755.json" beforeDir="false" afterPath="$PROJECT_DIR$/../test/cmake-build-debug/.cmake/api/v1/reply/index-2023-03-16T21-03-41-0185.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cmake-build-debug/.ninja_deps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cmake-build-debug/.ninja_log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../test/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../test/cmake-build-debug/CMakeFiles/3.24.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../test/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cmake-build-debug/CMakeFiles/test.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../test/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cmake-build-debug/test" beforeDir="false" afterPath="$PROJECT_DIR$/../main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../test/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,21 +40,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
   </component>
@@ -101,6 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679061765734</updated>
       <workItem from="1679061766899" duration="30000" />
+      <workItem from="1679189404238" duration="107000" />
     </task>
     <servers />
   </component>
