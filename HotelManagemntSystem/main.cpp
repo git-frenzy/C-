@@ -5,10 +5,12 @@ using namespace std;
 
 const string username = "Admin";
 const string password = "1357";
-bool getLogin;
+bool getLogin = false;
 int menuInput;
+bool available;
 
-void roomAllotment(string basicString);
+void roomAllotment(string name);
+
 int roomManagement();
 
 int guestManagement();
@@ -17,12 +19,9 @@ int groceryManagement();
 
 int security();
 
-
 void menu();
 
-
-
-int login() {
+bool login() {
 
     cout << "------Enter your Login details------" << endl;
 
@@ -38,11 +37,18 @@ int login() {
     cout << endl;
 
 
-    if (getUsername == username && getPassword == password) {
+//    if (getUsername == username && getPassword == password) {
+//        getLogin = true;
+//    } else {
+//        getLogin = false;
+//    }
+
+
+    if ((getUsername.compare(username)) == 0 && (getPassword.compare(password)) == 0) {
         getLogin = true;
-    } else {
-        getLogin = false;
     }
+
+    return getLogin;
 
 }
 
@@ -54,15 +60,16 @@ int guestRegistration() {
 
     cout << "Enter guest details" << endl;
 
-    string fullName = NULL;
-    int age = NULL;
-    string mobileNo = NULL;
+    string name;
+    int age;
+    string mobileNo = "";
 
 
-    cout << "FullName: ";
-    getline(cin, fullName);
+    cout << "Name: " << endl;
+    getline(cin, name);
 
-    cout << "Age: ";
+
+    cout << "Age: " << endl;
     cin >> age;
 
     if (age < 18) {
@@ -71,7 +78,7 @@ int guestRegistration() {
         return 0;
     }
 
-    cout << "Mobile number: ";
+    cout << "Mobile number: " << endl;
     cin >> mobileNo;
 
     if (mobileNo.length() != 10) {
@@ -83,8 +90,7 @@ int guestRegistration() {
     cout << "----------------------------------" << endl;
 
 
-    roomAllotment(fullName);
-
+    roomAllotment(name);
 
 
     return 0;
@@ -92,19 +98,22 @@ int guestRegistration() {
 
 void roomAllotment(string name) {
 
-  char room[]={' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '};
+    char room[] = {' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ',
+                   ' ', ' ', ' ', ' ', ' '};
 
 
-  cout<<"Available rooms are "<<;
+    int totalRooms = sizeof(room) / sizeof(char);
+
+//    cout<<totalRooms;
 
 
-  for(int i=0; i<)
+    for (int i = 0; i < totalRooms; i++) {
+        if (room[i] == ' ') {
+            room[i] = name[0];
+            cout << name << " are allotted to room number: " << i + 1;
 
-  if(room[]==' '){
-
-  }
-
-
+        }
+    }
 
 
 }
@@ -124,7 +133,6 @@ int groceryManagement() {
 int security() {
     return 0;
 }
-
 
 void menu() {
 
@@ -176,16 +184,33 @@ void menu() {
 int main() {
 
 
-    switch (login()) {
-        case true:
-            cout << "Authentication Successful";
-            menu();
-            break;
-        default:
-            cout << "Invalid Details";
-            login();
-            break;
+//    switch (login()) {
+//        case true:
+//            cout << "Authentication Successful" << endl;
+//            menu();
+//            break;
+//        case false:
+//            cout << "Authentication Failed" << endl;
+//            login();
+//            break;
+//        default:
+//            cout << "Invalid Details" << endl;
+//            login();
+//            break;
+//
+//    }
 
+
+    if (login() == true) {
+        cout << "Authentication Successful" << endl;
+        menu();
+    } else if (login() == false) {
+        cout << "Authentication Failed" << endl;
+        login();
+    } else {
+        cout << "Invalid Details" << endl;
+        login();
     }
+
 
 }
