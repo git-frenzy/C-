@@ -5,9 +5,12 @@ using namespace std;
 
 const string username = "Admin";
 const string password = "1357";
+
 bool getLogin = false;
 int menuInput;
 bool available;
+
+void guestRegistration();
 
 void roomAllotment(string name);
 
@@ -20,6 +23,61 @@ int groceryManagement();
 int security();
 
 void menu();
+
+bool login(string username, string password);
+
+int main() {
+
+//    switch (login()) {
+//        case true:
+//            cout << "Authentication Successful" << endl;
+//            menu();
+//            break;
+//        case false:
+//            cout << "Authentication Failed" << endl;
+//            login();
+//            break;
+//        default:
+//            cout << "Invalid Details" << endl;
+//            login();
+//            break;
+//
+//    }
+
+//    do {
+//        if (login() == true) {
+//            cout << "Authentication Successful" << endl;
+//            cout << endl;
+//            menu();
+//            break;
+//        }
+//    } while (login() != true);
+//    if (login() != true) {
+//        cout << "Invalid Details" << endl;
+//        cout << endl;
+//        login();
+//
+//    }
+
+
+    bool authenticated = false;
+    do {
+        authenticated = login("admin", "password");
+        if (authenticated) {
+            cout << "Authentication Successful" << endl;
+            cout << endl;
+            menu();
+            break;
+        } else {
+            cout << "Invalid Details" << endl;
+            cout << endl;
+        }
+    } while (!authenticated);
+
+    return 0;
+
+
+}
 
 bool login() {
 
@@ -37,22 +95,15 @@ bool login() {
     cout << endl;
 
 
-//    if (getUsername == username && getPassword == password) {
-//        getLogin = true;
-//    } else {
-//        getLogin = false;
-//    }
-
-
-    if ((getUsername.compare(username)) == 0 && (getPassword.compare(password)) == 0) {
-        getLogin = true;
+    if (username == getUsername && password == getPassword) {
+        return true;
+    } else {
+        return false;
     }
-
-    return getLogin;
 
 }
 
-int guestRegistration() {
+void guestRegistration() {
     cout << "------New Guest Registration------" << endl;
 
 
@@ -60,40 +111,40 @@ int guestRegistration() {
 
     cout << "Enter guest details" << endl;
 
+
     string name;
-    int age;
-    string mobileNo = "";
 
-
-    cout << "Name: " << endl;
+    cout << "Name: ";
     getline(cin, name);
 
 
-    cout << "Age: " << endl;
+    int age;
+
+    cout << "Age: ";
     cin >> age;
 
     if (age < 18) {
         cout << "Underage registration prohibited." << endl;
         guestRegistration();
-        return 0;
+        return;
     }
 
-    cout << "Mobile number: " << endl;
+
+    string mobileNo;
+
+    cout << "Mobile number: ";
     cin >> mobileNo;
 
     if (mobileNo.length() != 10) {
         cout << "Invalid Mobile Number." << endl;
         guestRegistration();
-        return 0;
+        return;
     }
 
     cout << "----------------------------------" << endl;
 
 
     roomAllotment(name);
-
-
-    return 0;
 }
 
 void roomAllotment(string name) {
@@ -106,7 +157,6 @@ void roomAllotment(string name) {
 
 //    cout<<totalRooms;
 
-
     for (int i = 0; i < totalRooms; i++) {
         if (room[i] == ' ') {
             room[i] = name[0];
@@ -114,7 +164,6 @@ void roomAllotment(string name) {
 
         }
     }
-
 
 }
 
@@ -171,46 +220,13 @@ void menu() {
             security();
             break;
         case 6:
-            login();
+            ::exit(0);
             break;
         default:
             menu();
             break;
     }
 
-
 }
 
-int main() {
 
-
-//    switch (login()) {
-//        case true:
-//            cout << "Authentication Successful" << endl;
-//            menu();
-//            break;
-//        case false:
-//            cout << "Authentication Failed" << endl;
-//            login();
-//            break;
-//        default:
-//            cout << "Invalid Details" << endl;
-//            login();
-//            break;
-//
-//    }
-
-
-    if (login() == true) {
-        cout << "Authentication Successful" << endl;
-        menu();
-    } else if (login() == false) {
-        cout << "Authentication Failed" << endl;
-        login();
-    } else {
-        cout << "Invalid Details" << endl;
-        login();
-    }
-
-
-}
